@@ -78,7 +78,7 @@ mapRef.current = ref
           />
           }
 
-          {inBoundsAndZoom && (confirmed > 0 || deaths > 0 || recovered > 0) && <MarkerWithLabel
+          {(confirmed > 0 || deaths > 0 || recovered > 0) && <MarkerWithLabel
           
               position={coords}
               labelAnchor={labelAnchor}
