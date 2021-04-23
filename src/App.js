@@ -102,7 +102,7 @@ function App() {
   const [timeSeries, setTimeSeries] = useState([])
 
   useEffect(()=> {
-    fetch('http://localhost:8000/data')
+    fetch('https://benjoe1412.github.io/korona-virus-api/data')
     .then(res => res.json())
     .then(locations => { 
       const locationsGrouped = {};
@@ -129,7 +129,7 @@ function App() {
   }, [])
 
   useEffect(()=> {
-    fetch('http://localhost:8000/time-series')
+    fetch('https://benjoe1412.github.io/korona-virus-api/time-series')
     .then(res => res.json())
     .then(locations => { 
 
